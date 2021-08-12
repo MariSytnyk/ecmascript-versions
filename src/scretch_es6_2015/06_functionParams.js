@@ -1,7 +1,7 @@
 // DEFAULT PARAMS in function
 
 // OLD version
-const add = (x, y)  => {
+function add(x, y) {
   x = x || 0;
   y = y || 0;
   return x + y;
@@ -22,6 +22,7 @@ function f () {
 }
 
 // NEW version
+// No arguments in arrow function anymore
 const f1 = (...args) => {
   for (let arg of args) {
     console.log(arg);
@@ -44,5 +45,5 @@ function f3(x, y, z) {
   return x + y + z;
 }
 // Pass each elem of array as argument
-f3(...[1,2,3]) == 6
+f3(...arr1) == 6
 

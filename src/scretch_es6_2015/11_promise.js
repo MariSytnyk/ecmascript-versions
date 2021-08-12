@@ -1,9 +1,6 @@
 // PROMISE
 
 // Without using Promise
-const audioSettings = {}
-const createAudioFileAsync = () => {}
-
 function successCallback(result) {
   console.log("Audio file ready at URL: " + result);
 }
@@ -12,10 +9,12 @@ function failureCallback(error) {
   console.error("Error generating audio file: " + error);
 }
 
-createAudioFileAsync(audioSettings, successCallback, failureCallback);
-
-// Rewritten to Promise
-createAudioFileAsync(audioSettings).then(successCallback, failureCallback);
+const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('foo');
+  }, 300);
+});
+myPromise.then(successCallback, failureCallback)
 
 // CHAINING
 const doSomething = () => {}

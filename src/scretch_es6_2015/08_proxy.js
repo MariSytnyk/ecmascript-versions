@@ -1,10 +1,11 @@
 // PROXY
 const target = {};
 const handler = {
-  get: (receiver, name) => {
-    return `Hello, ${name}!`;
+  get: (receiver, prop) => {
+    console.log(receiver === target)
+    return `Hello, ${ prop }!`;
   }
 };
 
 const p = new Proxy(target, handler);
-p.world === 'Hello, world!';
+console.log(p.world)

@@ -29,7 +29,7 @@ console.log(ted);
 console.log(Person.staticProperty)
 
 // INHERITENCE
-class Author extends Person{
+class Author extends Person {
   constructor(firstName, lastName, age, subject){
     super(firstName, lastName, age);
     this.subject = subject;

@@ -38,10 +38,6 @@ Number.isFinite(123) === true
 Number.isSafeInteger(42) === true
 Number.isSafeInteger(9007199254740992) === false
 
-// Number comparison
-console.log(0.1 + 0.2 === 0.3) // false
-console.log(Math.abs((0.1 + 0.2) - 0.3) < Number.EPSILON) // true
-
 // Number truncation
 console.log(Math.trunc(42.7)) // 42
 console.log(Math.trunc( 0.1)) // 0
