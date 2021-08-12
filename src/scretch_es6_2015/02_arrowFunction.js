@@ -31,13 +31,13 @@ person.logLaterArrow()
 
 
 // concise body syntax, implied "return"
-// const noReturn = () => 12 + 2
-//
-// // with block body, explicit "return" needed
-// const withReturn = () => {
-//   let count = 2
-//   return 12 + count
-// }
+const noReturn = () => 12 + 2
+
+// with block body, explicit "return" needed
+const withReturn = () => {
+  let count = 2
+  return 12 + count
+}
 
 // 1. Syntax
 // 2. Usage of this keyword

@@ -4,7 +4,7 @@ let sym3 = Symbol('foo')
 
 console.log(sym2 === sym3)  // false
 
-let sym = new Symbol()  // TypeError
+// let sym = new Symbol()  // TypeError
 
 // for...in iteration
 let obj = {}

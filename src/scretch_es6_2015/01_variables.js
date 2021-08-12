@@ -14,16 +14,16 @@
 // console.log(getFood(false), snack); // undefined
 
 // let keyword does not allow that
-// let snack = 'Meow Mix';
-// function getFood(food) {
-//   if (food) {
-//     let snack = 'Friskies';
-//     return snack;
-//   }
-//   return snack;
-// }
-//
-// console.log(getFood(false)) // 'Meow Mix'
+let snack = 'Meow Mix';
+function getFood(food) {
+  if (food) {
+    let snack = 'Friskies';
+    return snack;
+  }
+  return snack;
+}
+
+console.log(getFood(false)) // 'Meow Mix'
 
 // Only visible in own scope. Cannot be used before declaration
 // console.log(x); // ReferenceError: x is not defined

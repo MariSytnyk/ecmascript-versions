@@ -2,7 +2,7 @@
 
 const a = { duration: 50, title: '' };
 
-a.duration ||= 10;
+a.duration ||= 10; // a.duration = a.duration || 10
 console.log(a.duration);
 // expected output: 50
 
